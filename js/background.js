@@ -10,4 +10,5 @@ if (font === null){}
 else {
 document.body.style.fontFamily = font;
 }
+location.reload()
 }
