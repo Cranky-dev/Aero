@@ -12,8 +12,14 @@
         }
       }
     </script>
+    <style>
+      @import url("css/style.css")
+    </style>
   </head>
   <body onload="bgset()">
+    <table id="glass">
+    <tr>
+    <td>
     <table id="glass">
       <tr>
         <td><input type="radio" id="_1" name="bg" value="background/1.jpg">1</input></td>
@@ -47,6 +53,10 @@
         <td><input type="radio" id="_15" name="bg" value="background/15.jpg">15</input></td>
         <td><input type="radio" id="_16" name="bg" value="background/16.jpg">16</input></td>
       </tr>
+    </table>
+    </td>
+    <td></td>
+    </tr>
     </table>
     <button onclick="getSelectedRadio()">Save</button>
   </body>
