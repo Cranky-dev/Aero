@@ -8,11 +8,16 @@
       let output = document.getElementById("output");
       function getSelectedRadio() {
         let radioButtons = document.getElementsByName('bg');
+        let radioButtons2 = document.getElementsByName('font');
         for (let radio of radioButtons) {
           if (radio.checked) {
             localStorage.setItem("image", radio.value)
           }
         }
+        for (let radio2 of radioButtons2) {
+          if (radio.checked) {
+            localStorage.setItem("font", radio2.value)
+          }
       }
     </script>
   </head>
@@ -57,7 +62,15 @@
     </td>
     <td></td>
     </tr>
+  </table><table class="glass">
+      <tr>
+        <th><h3>font</h3></th>
+      </tr>
+      <tr>
+        <td><input type="radio" name="font" value=""></input></td>
+        <td></td>
+      </tr>
     </table>
-    <button onclick="getSelectedRadio()">Save</button>
+    <button class="glass" onclick="getSelectedRadio()">Save</button>
   </body>
 </html>
