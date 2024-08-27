@@ -1,7 +1,7 @@
 function bgset() {
 let img = localStorage.getItem("image")
 if (img === null){
-document.body.style.backgroundColor = "Blue"
+document.body.style.backgroundColor = "blue"
 }
 else {
 document.body.style.backgroundImage = "url(" + img + ")";
@@ -13,4 +13,5 @@ else {
 document.body.style.fontFamily = font;
 }
 location.reload()
+return false;
 }
