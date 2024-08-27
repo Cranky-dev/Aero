@@ -1,6 +1,8 @@
 function bgset() {
 let img = localStorage.getItem("image")
-if (img === null){}
+if (img === null){
+document.body.style.backgroundColor = "Blue"
+}
 else {
 document.body.style.backgroundImage = "url(" + img + ")";
 document.body.style.backgroundSize = "100% 100%";
