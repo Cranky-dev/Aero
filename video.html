@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style>
+      @import url("css/style.css");
+    </style>
+    <script src="js/background.js"></script>
+    <script>
+      function load() {
+        const search = document.getElementById("searchbar").value;
+        const device = document.getElementById("screen");
+        device.src = "https://youtube.com/embed/" + search;
+      }
+    </script>
+  </head>
+  <body onload="bgset()">
+    <div class="glass" width="100%">
+      <h1>Youtube Client</h1>
+    </div>
+    <input class="glass" id="searchbar" placeholder="video id"/>
+    <button class="glass" onclick="load()">Q</button>
+  </br>
+    <iframe height="720px" width="1280px" id="screen"></iframe>
+  </body>
+</html>
